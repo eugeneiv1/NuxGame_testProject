@@ -1,0 +1,31 @@
+@media screen and (max-width: 700px) {
+    .solution-image {
+        display: none;
+    }
+
+    .business-slider-list-item-name {
+        margin-top: 25px;
+    }
+
+    .footer-main {
+        flex-wrap: wrap;
+
+        padding: 40px 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 40px;
+    }
+
+    .follow {
+        margin-bottom: 30px;
+    }
+
+    .follow-title, .footer-sales-title {
+        margin-bottom: 15px;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+    }
+}

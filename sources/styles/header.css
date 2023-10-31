@@ -1,0 +1,156 @@
+header {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 50px 5px rgba(232, 218, 247, 0.80);
+}
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(124, 124, 255, 0.50);
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.header-logo-link span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #450190;
+
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+}
+
+.header-contacts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contacts-list-item {
+    margin-left: 36px;
+}
+
+.header-contacts-list-item:last-child {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.header-contacts-list-item-language {
+    color: #060048;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-nav-list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+    padding: 15px 0;
+}
+
+.header-nav-list-item:hover .nav-arrow,
+.header-contacts-list-item:hover .nav-arrow{
+    transform: rotate(-180deg);
+}
+
+.header-nav-list-item a{
+    color: #060048;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subList {
+    position: absolute;
+    top: 100%;
+    padding: 15px 0;
+    left: -20px;
+
+    background-color: #060048;
+
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+}
+
+.header-nav-list > li:hover .subList,
+.header-contacts-list > li:hover .subList{
+    opacity: 1;
+    z-index: 10;
+    visibility: visible;
+    transform: translate(0px, 0px);
+    pointer-events: all;
+}
+
+.subList li {
+    margin: 0 0 10px 0;
+    min-width: 100px;
+    text-align: center;
+}
+
+.sublist-language li {
+    min-width: 50px;
+}
+
+.subList li:last-child {
+    margin: 0;
+}
+
+.subList a {
+    color: lightgray;
+}
+
+.subList-link:hover {
+    text-decoration: underline;
+}
+
+.nav-arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #060048;
+
+    transition: transform 0.3s ease 0s;
+}
+
+.burger {
+    display: none;
+}
+
+

@@ -1,0 +1,110 @@
+.faq {
+    margin-top: 188px;
+}
+
+.faq-title {
+    line-height: 100%;
+
+    max-width: 650px;
+}
+
+.faq-questions-list {
+    margin-top: 30px;
+
+    cursor: pointer;
+}
+
+.faq-questions-list-item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    padding: 20px 15px;
+
+    background-color: #440090;
+    border-radius: 15px;
+
+    transition: background-color 0.3s ease;
+}
+
+.faq-questions-list-item-title-text {
+    color: #FFF;
+}
+
+.faq-questions-list-item-title-btn {
+    display: block;
+    flex-shrink: 0;
+
+    width: 20px;
+    height: 18px;
+
+    cursor: pointer;
+    position: relative;
+    right: 0;
+
+    padding-top: 9px;
+}
+
+.faq-questions-list-item-title-btn span,
+.faq-questions-list-item-title-btn::before {
+    right: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: #FFF;
+}
+
+.faq-questions-list-item-title-btn::before {
+    content: "";
+    transform: rotate(0deg);
+    top: 9px;
+
+    transition: all 0.3s ease;
+}
+
+
+.faq-questions-list-item-text-wrapper {
+    max-height: 1000px;
+
+    position: relative;
+    padding-top: 50px;
+
+    overflow: hidden;
+
+    transition: max-height 0.5s ease, padding-top 0.8s ease;
+}
+
+.faq-questions-list-item-text {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-title {
+    background-color: #F5F5F7;
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-title .faq-questions-list-item-title-text{
+    color: #060048;
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-title .faq-questions-list-item-title-btn span,
+.faq-questions-list-item.closed .faq-questions-list-item-title .faq-questions-list-item-title-btn::before{
+    background-color: #060048;
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-title .faq-questions-list-item-title-btn::before {
+    transform: rotate(-90deg);
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-text-wrapper {
+    padding-top: 0;
+    max-height: 0;
+}
+
+.faq-questions-list-item.closed .faq-questions-list-item-title:hover {
+    background-color: #E8E5F4;
+}

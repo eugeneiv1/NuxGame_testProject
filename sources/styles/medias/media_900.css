@@ -1,0 +1,27 @@
+@media screen and (max-width: 900px) {
+    .products-possibilities-item {
+        width: auto;
+    }
+
+    .products {
+        padding: 15px;
+    }
+
+    .footer-content {
+        gap: 30px;
+        margin-left: 15px;
+    }
+
+    .footer-content-list-wrapper {
+        min-width: auto;
+    }
+
+    .footer-logos {
+        padding: 20px 0;
+    }
+
+    .footer-logos-list {
+        justify-content: center;
+        gap: 10px;
+    }
+}

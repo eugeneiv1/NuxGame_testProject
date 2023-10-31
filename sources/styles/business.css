@@ -1,0 +1,78 @@
+.business {
+    margin-top: 187px;
+}
+
+
+.business-title {
+    opacity: 0.90;
+
+    max-width: 412px;
+}
+
+.business-text {
+    line-height: 1.5;
+
+    max-width: 488px;
+    margin-top: 30px;
+}
+
+.business-slider {
+    position: relative;
+    overflow: hidden;
+
+    margin-top: 70px;
+}
+
+.business-slider-list {
+    width: 150%;
+    left: 0;
+    position: relative;
+    display: flex;
+
+    transition: left 0.7s ease;
+}
+
+.business-slider-list-item {
+    height: 100%;
+
+    padding: 30px 22px 22px;
+
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.04);
+}
+
+.swiper-slide.swiper-slide {
+    width: 488px;
+    height: auto;
+    padding: 0 10px;
+}
+
+.business-slider-list-item-logo {
+    max-width: 130px;
+}
+
+.business-slider-list-item-logo img {
+    width: 100%;
+}
+
+.business-slider-list-item-text {
+    line-height: 1.5;
+
+    margin-top: 25px;
+}
+
+.business-slider-list-item-name {
+    color: #060048;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.63;
+
+    margin-top: 40px;
+}
+
+.business-slider-list-item-position {
+    color: #060048;
+    font-size: 20px;
+    line-height: 1.8;
+}
