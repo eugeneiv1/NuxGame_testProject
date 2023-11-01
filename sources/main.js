@@ -35,7 +35,7 @@ if (languages) {
 
 const swiper = new Swiper('.swiper', {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     alloTouchMove: true,
     followFinger: true,
     speed: 500,
